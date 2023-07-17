@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+        body {
+            text-align:center;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            align-items:center;
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            text-align:center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            text-align:left;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Magnus</h2>
+        <h3>Admin - Sign in</h3>
+
+        <form id="adminLoginForm">
+            <div class="form-group">
+                <label for="adminEmail">Email or Mobile No</label>
+                <input type="text" id="adminEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input type="password" id="adminPassword" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign in</button>
+            </div>
+            <div class="form-group">
+                <a href="index.html">Back</a>
+            </div>
+        </form>
+    </div>
+    <p>JALA Technologies offers Job Guaranteed Programs for Freshers to 10 years’ experience on JAVA/.Net / Automation Testing / Dev-Ops / Middleware Technologies / WebLogic / JBoss / Tomcat / Python/AI/DataScience and for those who want to be a software engineer in 90 Days. Contact Details: <a href="http://jalatechnologies.com/contact-us.html">http://jalatechnologies.com/contact-us.html</a></p>
+
+
+    <script>
+        document.getElementById("adminLoginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var adminEmail = document.getElementById("adminEmail").value;
+            var adminPassword = document.getElementById("adminPassword").value;
+
+            // Add your admin login validation logic here
+
+            // Example validation
+            if (adminEmail === "admin@example.com" && adminPassword === "adminpassword") {
+                alert("Admin login successful!");
+            } else {
+                alert("Invalid admin credentials. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
