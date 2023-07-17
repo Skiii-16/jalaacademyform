@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.company-name {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.message {
+  background-color: yellow;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.login-credentials {
+  font-weight: bold;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.credentials label,
+.options label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.credentials input[type="text"],
+.credentials input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: blue;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-login {
+  margin-top: 20px;
+}
+
+.additional-info {
+  margin-top: 20px;
+  text-align: center;
+}
